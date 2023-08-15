@@ -1,0 +1,300 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1165,5378" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>Org.BouncyCastle.Utilities.Encoders</x:String>
+      <x:String>Microsoft.Graph</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>BouncyCastle.Crypto</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="644,5313" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="HavaSicaklik" />
+      <Variable x:TypeArguments="x:String" Name="SehirAdi" />
+      <Variable x:TypeArguments="x:String" Name="HavaYagis" />
+      <Variable x:TypeArguments="x:String" Name="HavaRuzgar" />
+      <Variable x:TypeArguments="x:String" Name="HavaNem" />
+      <Variable x:TypeArguments="x:String" Name="HavaSehir" />
+      <Variable x:TypeArguments="x:String" Name="GunSaat" />
+      <Variable x:TypeArguments="x:String" Name="BulutDurumu" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Hedef Web Sayfası" AttachMode="ByInstance" CloseMode="Never" DisplayName="Calisma Ortamı" sap:VirtualizedContainerService.HintSize="582,5076" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="836bb2ff-f3da-406d-8fd1-9eaa4f0ffc63" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,4827" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:Image" Name="symbol" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Kullanıcının form sorgu ekranında boş değer girilmesi engellenir." DisplayName="Kullanıcının Boş Giriş Engellemesi" sap:VirtualizedContainerService.HintSize="486,1124" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,956" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Sehir Adi Sorgulama" sap:VirtualizedContainerService.HintSize="410,297" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Hava Durumu Platformuna Hoş Geldiniz&quot; +vbCrLf+&#xA;&quot; &quot;+vbCrLf+&#xA;&quot;Hava durmunu öğrenmek istediğiniz şehri yazınız&quot;]" Title="Hava Durumu Platformu">
+                    <ui:InputDialog.Result>
+                      <OutArgument x:TypeArguments="x:String">[SehirAdi]</OutArgument>
+                    </ui:InputDialog.Result>
+                  </ui:InputDialog>
+                  <If Condition="[String.IsNullOrWhiteSpace(SehirAdi)]" sap:VirtualizedContainerService.HintSize="410,531" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,174" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Giriş boş olamaz. Lütfen geçerli bir şehir ismi giriniz.&quot;]" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,174" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Giriş başarlı&quot;]" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="String.IsNullOrWhiteSpace(SehirAdi)" />
+              </ui:InterruptibleDoWhile.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleDoWhile>
+            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Kullanıcıdan alınan şehir ismi &quot;Hava Durumu&quot; yazısıla birleştirilerek arama kutucuğa yazılır." ClickBeforeMode="Single" DisplayName="Sehir İsmi arama kutuguna yazma" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="486,263" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="836bb2ff-f3da-406d-8fd1-9eaa4f0ffc63" Text="[SehirAdi +&quot; Hava Durumu&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/" CvType="InputBox" DesignTimeRectangle="724, 512, 403, 27" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'TEXTAREA APjFqb'" FullSelectorArgument="&lt;webctrl id='APjFqb' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='APjFqb' tag='TEXTAREA' type='search' class='gLFyf' aaname='Ara' /&gt;" Guid="cc31564c-fcaa-41f6-96d9-1a274f690008" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZcAAAAfCAYAAAAr8oAMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACESURBVHhe7dUxAQAADMOg+TfdmcgJJrgBQEwuAOTkAkBOLgDk5AJATi4A5OQCQE4uAOTkAkBOLgDk5AJATi4A5OQCQE4uAOTkAkBOLgDk5AJATi4A5OQCQE4uAOTkAkBOLgDk5AJATi4A5OQCQE4uAOTkAkBOLgDk5AJATi4A5OQCQGx78nxqWYemIsgAAAAASUVORK5CYII=" InformativeScreenshot="6606277f98420058609df4dd7613847d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" sap2010:Annotation.AnnotationText="Arama Kutucuğa yazılan değerin &quot;Enter&quot; anahtar kombinasyonu ile değerin aratılması" ClickBeforeMode="None" DisplayName="Kullanıcı Robot Hareketi" sap:VirtualizedContainerService.HintSize="486,224" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="836bb2ff-f3da-406d-8fd1-9eaa4f0ffc63" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NKeyboardShortcuts>
+            <uix:NGetText sap2010:Annotation.AnnotationText="Web sayfasından aradığımız şehrin isminin yakalanması ve &quot;HavaSehir&quot; değişkenine aktarılması" DisplayName="Web sayfasından Şehir isminin çekilmesi" sap:VirtualizedContainerService.HintSize="486,202" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="836bb2ff-f3da-406d-8fd1-9eaa4f0ffc63" TextString="[HavaSehir]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Ankara+Hava+Durumu&amp;source=hp&amp;ei=pLG-ZJqVI-6Exc8PobS6yAo&amp;iflsig=AD69kcEAAAAAZL6_tNcz73HJwOh5zdl6gtOfZ3k-gjiU&amp;ved=0ahUKEwia9_WQ7KeAAxVuQvEDHSGaDqkQ4dUDCAk&amp;uact=5&amp;oq=Ankara+Hava+Durumu&amp;gs_lp=Egdnd3Mtd2l6IhJBbmthcmEgSGF2YSBEdXJ1bXUyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESPAIUIUBWPYBcAF4AJABAZgBoAKgAcgIqgEDMi00uAEDyAEA-AEBqAIKwgIQEAAYAxiPARjqAhiMAxjlAsICEBAuGAMYjwEY6gIYjAMY5QI&amp;sclient=gws-wiz" CvType="AnyWordGroup" DesignTimeRectangle="301, 274, 47, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Ankara'" FullSelectorArgument="&lt;webctrl parentid='oFNiHe' tag='SPAN' visibleinnertext='Ankara' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='oFNiHe' tag='SPAN' visibleinnertext='Ankara' type='' class='BBwThe' /&gt;" Guid="df2ebb81-94e7-4d8b-9fc4-ab183dd37f21" ImageBase64="" InformativeScreenshot="0ef6c824b397221dfce5c17c5c796e47.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ankara Hava Durumu - Google&amp;apos;da Ara' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,145" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Konum: &quot;+ HavaSehir]" />
+            <uix:NGetText sap2010:Annotation.AnnotationText="Web sayfasından aradığımız şehrin havadurumunun son güncelleme saati ve günü.&quot;GunSaat&quot; değişkenine aktarılması" DisplayName="Hava durumu saati" sap:VirtualizedContainerService.HintSize="486,218" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="836bb2ff-f3da-406d-8fd1-9eaa4f0ffc63" TextString="[GunSaat]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Sinop+Hava+Durumu&amp;source=hp&amp;ei=8rK-ZIX7LZ2Rxc8PiZW4oAE&amp;iflsig=AD69kcEAAAAAZL7BAsyfk--sgyqyGI2TecgbFRjVmD6k&amp;ved=0ahUKEwiFvKKw7aeAAxWdSPEDHYkKDhQQ4dUDCAk&amp;uact=5&amp;oq=Sinop+Hava+Durumu&amp;gs_lp=Egdnd3Mtd2l6IhFTaW5vcCBIYXZhIER1cnVtdTILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIwAhQf1jnAXABeACQAQKYAasCoAHlCKoBAzItNLgBA8gBAPgBAagCCsICEBAuGAMYjwEY6gIYjAMY5QLCAhAQABgDGI8BGOoCGIwDGOUC&amp;sclient=gws-wiz" CvType="AnyWordGroup" DesignTimeRectangle="564, 348, 326, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Pazartesi 20:00'" FullSelectorArgument="&lt;webctrl id='wob_dts' tag='DIV' visibleinnertext='Pazartesi 20:00' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_dts' tag='DIV' visibleinnertext='Pazartesi 20:00' type='' class='wob_dts' /&gt;" Guid="a5e4f327-1dcb-4c0c-b3b5-e2958cf6c8a3" ImageBase64="" InformativeScreenshot="45c6fe4c6fcdaf0ac33c26c3e9b5719f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sinop Hava Durumu - Google&amp;apos;da Ara' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,145" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Son güncelleme: &quot;+GunSaat]" />
+            <uix:NGetText sap2010:Annotation.AnnotationText="Web sayfasından aradığımız şehrin hava durumundaki bulut durumu.&quot;BulutDurumu&quot; değişkenine aktarılması" DisplayName="Bulut durumu" sap:VirtualizedContainerService.HintSize="486,202" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="836bb2ff-f3da-406d-8fd1-9eaa4f0ffc63" TextString="[BulutDurumu]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Sinop+Hava+Durumu&amp;source=hp&amp;ei=8rK-ZIX7LZ2Rxc8PiZW4oAE&amp;iflsig=AD69kcEAAAAAZL7BAsyfk--sgyqyGI2TecgbFRjVmD6k&amp;ved=0ahUKEwiFvKKw7aeAAxWdSPEDHYkKDhQQ4dUDCAk&amp;uact=5&amp;oq=Sinop+Hava+Durumu&amp;gs_lp=Egdnd3Mtd2l6IhFTaW5vcCBIYXZhIER1cnVtdTILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIwAhQf1jnAXABeACQAQKYAasCoAHlCKoBAzItNLgBA8gBAPgBAagCCsICEBAuGAMYjwEY6gIYjAMY5QLCAhAQABgDGI8BGOoCGIwDGOUC&amp;sclient=gws-wiz" CvType="AnyWordGroup" DesignTimeRectangle="820, 369, 70, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Az bulutlu'" FullSelectorArgument="&lt;webctrl id='wob_dc' tag='SPAN' visibleinnertext='Az bulutlu' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_dc' tag='SPAN' visibleinnertext='Az bulutlu' type='' class='' /&gt;" Guid="c4d5f6ec-72c1-4c79-8780-aa2f489fdc35" ImageBase64="" InformativeScreenshot="efb2a2ac2eaad90b44a15938ac1c21ae.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sinop Hava Durumu - Google&amp;apos;da Ara' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,145" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Bulut Durumu: &quot;+BulutDurumu]" />
+            <uix:NGetText sap2010:Annotation.AnnotationText="Web sayfasından aradığımız şehrin hava sıcaklığının yakalanması.&quot;HavaSicaklik&quot; değişkenine aktarılması" DisplayName="Hava Sıcaklığı" sap:VirtualizedContainerService.HintSize="486,202" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="836bb2ff-f3da-406d-8fd1-9eaa4f0ffc63" TextString="[HavaSicaklik]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Malatya+Hava+Durumu&amp;source=hp&amp;ei=Taq-ZJbBBfKRxc8PotWzqAE&amp;iflsig=AD69kcEAAAAAZL64XYWHfUcREBJUNokAgBKAiTDl1soC&amp;ved=0ahUKEwjWm9uQ5aeAAxXySPEDHaLqDBUQ4dUDCAk&amp;uact=5&amp;oq=Malatya+Hava+Durumu&amp;gs_lp=Egdnd3Mtd2l6IhNNYWxhdHlhIEhhdmEgRHVydW11MgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjfB1BTWMcBcAF4AJABA5gBygKgAd8JqgEFMi0xLjO4AQPIAQD4AQGoAgrCAhAQABgDGI8BGOoCGIwDGOUCwgIQEC4YAxiPARjqAhiMAxjlAg&amp;sclient=gws-wiz" CvType="AnyWordGroup" DesignTimeRectangle="308, 323, 53, 53" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'29'" FullSelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' innertext='29' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' type='' class='wob_t q8U8x' /&gt;" Guid="3e626437-d3b6-4c67-a007-62c938a02809" ImageBase64="" InformativeScreenshot="80e9397a6bad5934786b76126a550344.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Malatya Hava Durumu - Google&amp;apos;da Ara' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,145" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Hava Sıcaklığı:&quot;+ HavaSicaklik]" />
+            <uix:NGetText sap2010:Annotation.AnnotationText="Web sayfasından aradığımız şehrin yağış durmunun yakalanması.&quot;HavaYağis&quot; değişkenine aktarılması" DisplayName="Yağış Değeri" sap:VirtualizedContainerService.HintSize="486,202" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="836bb2ff-f3da-406d-8fd1-9eaa4f0ffc63" TextString="[HavaYagis]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Ankara+Hava+Durumu&amp;source=hp&amp;ei=jFHBZJycAbKMxc8PvtKHqA0&amp;iflsig=AD69kcEAAAAAZMFfnBB9wNckN3CPZFz5dQmWvDdd8yKt&amp;ved=0ahUKEwickrv07KyAAxUyRvEDHT7pAdUQ4dUDCAk&amp;uact=5&amp;oq=Ankara+Hava+Durumu&amp;gs_lp=Egdnd3Mtd2l6IhJBbmthcmEgSGF2YSBEdXJ1bXUyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESNc4UM0xWLgycAJ4AJABA5gBpAKgAcgIqgEDMi00uAEDyAEA-AEBqAIKwgIQEAAYAxiPARjqAhiMAxjlAsICEBAuGAMYjwEY6gIYjAMY5QI&amp;sclient=gws-wiz" CvType="AnyWordGroup" DesignTimeRectangle="419, 328, 81, 16" DesignTimeScaleFactor="1" FriendlyName="'Yağış: 0%'" FullSelectorArgument="&lt;webctrl aaname='Yağış:* ' parentid='wob_wc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='wob_wc' tag='DIV' type='' class='' /&gt;" Guid="71c25a88-e44c-45c5-b224-46a1c1dc1f37" ImageBase64="" InformativeScreenshot="732cb9eabc12141db7e639c2d66ecb41.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* Hava Durumu - *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,145" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Yağış Durumu: &quot;+HavaYagis]" />
+            <uix:NGetText sap2010:Annotation.AnnotationText="Web sayfasından aradığımız şehrin nem durmunun yakalanması.&quot;HavaNem&quot; değişkenine aktarılması" DisplayName="Nem Değeri" sap:VirtualizedContainerService.HintSize="486,202" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="836bb2ff-f3da-406d-8fd1-9eaa4f0ffc63" ScrapingOptions="None" TextString="[HavaNem]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Ankara+Hava+Durumu&amp;source=hp&amp;ei=jFHBZJycAbKMxc8PvtKHqA0&amp;iflsig=AD69kcEAAAAAZMFfnBB9wNckN3CPZFz5dQmWvDdd8yKt&amp;ved=0ahUKEwickrv07KyAAxUyRvEDHT7pAdUQ4dUDCAk&amp;uact=5&amp;oq=Ankara+Hava+Durumu&amp;gs_lp=Egdnd3Mtd2l6IhJBbmthcmEgSGF2YSBEdXJ1bXUyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESNc4UM0xWLgycAJ4AJABA5gBpAKgAcgIqgEDMi00uAEDyAEA-AEBqAIKwgIQEAAYAxiPARjqAhiMAxjlAsICEBAuGAMYjwEY6gIYjAMY5QI&amp;sclient=gws-wiz" DesignTimeRectangle="419, 344, 81, 16" DesignTimeScaleFactor="1" FriendlyName="'Nem: 19%'" FullSelectorArgument="&lt;webctrl aaname='Nem:*' parentid='wob_wc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='wob_wc' tag='DIV' type='' class='' /&gt;" Guid="879c0f02-21dd-4846-a64c-bd947febd323" ImageBase64="" InformativeScreenshot="be2f08a99ef8c7a5237cade0ee327ae2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ankara Hava Durumu - Google&amp;apos;da Ara' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,145" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Nem Durumu:&quot;+HavaNem]" />
+            <uix:NGetText sap2010:Annotation.AnnotationText="Web sayfasından aradığımız şehrin rüzgar hızı durmunun yakalanması.&quot;HavaRuzgar&quot; değişkenine aktarılması" DisplayName="Rüzgar Değeri" sap:VirtualizedContainerService.HintSize="486,218" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="836bb2ff-f3da-406d-8fd1-9eaa4f0ffc63" TextString="[HavaRuzgar]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=Ankara+Hava+Durumu&amp;source=hp&amp;ei=jFHBZJycAbKMxc8PvtKHqA0&amp;iflsig=AD69kcEAAAAAZMFfnBB9wNckN3CPZFz5dQmWvDdd8yKt&amp;ved=0ahUKEwickrv07KyAAxUyRvEDHT7pAdUQ4dUDCAk&amp;uact=5&amp;oq=Ankara+Hava+Durumu&amp;gs_lp=Egdnd3Mtd2l6IhJBbmthcmEgSGF2YSBEdXJ1bXUyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESNc4UM0xWLgycAJ4AJABA5gBpAKgAcgIqgEDMi00uAEDyAEA-AEBqAIKwgIQEAAYAxiPARjqAhiMAxjlAsICEBAuGAMYjwEY6gIYjAMY5QI&amp;sclient=gws-wiz" DesignTimeRectangle="419, 360, 81, 16" DesignTimeScaleFactor="1" FriendlyName="'Rüzgar: 2 km/s1 mph'" FullSelectorArgument="&lt;webctrl aaname='Rüzgar:* ' parentid='wob_wc' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='wob_wc' tag='DIV' type='' class='' /&gt;" Guid="2be638e0-717b-402b-9412-516bccec8eea" ImageBase64="" InformativeScreenshot="e47f9190faddf6541008cd069898f976.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ankara Hava Durumu - Google&amp;apos;da Ara' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,145" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Rüzgar Durumu: &quot;+HavaRuzgar]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARHSURBVFhHvZddbBRVFMf7YrAq+OSbD6Kgb0qUUh60xq9VtA8k1EJrH1CsGIM+GLUmBA0kFi0WSMCHLcVCTMO2GmjFCiUFpH60sUjMEtIGLaAWama32w92dt2vOf7PndPd3M7sdmobf8k/M/fec8//zJ07s7NFXrEsawlUnclkmqEBaAxKisLS14yYKo6VafMHyR5A4hYoTh5BbAw6iLnLJc3cQZ7bkKQRSttp5w7mpqBdKKRY0noDE+7HxEuSZ94gVxA5l0n6wiDwYUwIyVyN9I0RMls/p4l33qDwi8+R4VtNxjOlFF7no/G3XyfzcBOlR/6UaB3kNHBYITbuyJU7zNOj12ly+/tkPL2KjKdKCgsxkx++p+bMhIvIuxIYuB0BjmWPn+qi0Atl7mYFFCp/nP45e0qy5IAH3w7nnsBAo8RkMY8cck3uVVMN2yWTDrwaxNYGFfGjpu12vnK3pKxIbRVFD+yj+DdHKd51DOf7KfJatRYztbueyLIkmw68UtqtQEeLjCl4s4Wef0xLyBqrWUuJ8/0S5SQx0EfhDeV0c/+n0pMfeDYrc5zfiYb2konufdNhPr7lZbKmpiQiP5YZlbPCwNPEKizm5a+WPoUVG6ZU9yKarLsna86PXGYiIhELB7zX8/I3S1uRuVpPqZ5blMx9d1FozUqKnzwuowsLvP1cwIC0FelffNkCWImjS4lSKRldWODdzwWMSVuR6r1bKyB9sUpG3Hnyo6hnnb2kXwi8DS4gKW1F6vQirYDM79tkxB03o3xq/VGz4gIS/2sBLecSMstmuoCwtBWOWxDcICPuuBnlU3u/YwXULdA34YVntQJGeh+kZGbum/CKkXEUcG7QsQfUJpzxGH6cNT/etZQeDayljuEeGfVOoC/pKGB0Qn81w9vPLyJtm1uxqxTrKab6jkdoZWCdkq/jFQrHxyVidm7GLarYa2rmG/0xGc0B70ouYAkq0Ub39O3Imk+rpvtdmkjM/ipO4iet7khcM2e1Oe+/icMd6vcAjYN2t82NqEFlX73kKKL8683Ue/28RDm5PH6NNnUGYDipmfNqxBKO5W9S5gxWYTk6tB1y4lqvo4BpVXz7FjVeaKH2yyfoy99O0mfBVnq1ZyuVBCrUeOmhOnrik7+yBXw/pH/XwisJz/vE3gadu2Q8yxdDnQ5zrypp3Uhlu392PPsMvHaKbQ7082f4RTskR/cfP+B21LiaFFJpWyUdCHZKlhzw+BWHW8VWB8uyDAH89aoxaoZo6097aFWbvcSzafOZD2gwMiyzcyD33zjcK3buIGCFWxEMb87Dg8doy3c7aE1nLa1ur1RX6uvYRLWnt6m9MBS5ItE6bI4LfEhsCiMrEZS58wa5eNkLX/lMUEQxJjZA//ljAHP5j+tOnLrfcy/IavA/Yn5xeIJjoSbM1R+1+YBki6H1SOyH+iEDSoj4nPv8iKlEDfYbblaKiv4FoeF/NqqvoEMAAAAASUVORK5CYII=" InformativeScreenshot="ee33b7fb38cbad76098b8bd5b31e5e52.jpg" Selector="&lt;html app='chrome.exe' title='Google' /&gt;" Title="Yeni Sekme" Url="https://www.google.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="582,86" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Sorgulama tarihi ve saati: &quot; + Now.ToString(&quot;dd/MM/yyyy HH:mm:ss&quot;)+vbCrLf+&#xD;&#xA;&quot; &quot;+vbCrLf+&#xD;&#xA;&quot;Konum: &quot;+HavaSehir+vbCrLf+&#xD;&#xA;&quot; &quot;+vbCrLf+&#xD;&#xA;&quot;En son Güncelleme: &quot;+GunSaat+&quot; &quot;+vbCrLf+&#xD;&#xA;&quot; &quot;+vbCrLf+&#xD;&#xA;&quot;Bulut Durumu: &quot;+BulutDurumu+vbCrLf+&#xD;&#xA;&quot; &quot;+vbCrLf+&#xD;&#xA;&quot;Hava sıcaklığı &quot;+HavaSicaklik + &quot; °C derecedir. &quot;+vbCrLf+&#xD;&#xA;&quot; &quot;+vbCrLf+&#xD;&#xA;HavaYagis+&quot; yağış ihtimali vardır.&quot;+vbCrLf+&#xD;&#xA;&quot; &quot;+vbCrLf+&#xD;&#xA;HavaNem +&quot; nem vardır.&quot;+vbCrLf+&#xD;&#xA;&quot; &quot;+vbCrLf+&#xD;&#xA;HavaRuzgar +&quot; şiddetinde esmektedir.&quot;]" />
+  </Sequence>
+</Activity>

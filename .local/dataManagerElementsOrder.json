@@ -1,0 +1,30 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "symbol&Sequence_6",
+        "HavaSicaklik&Sequence_5",
+        "SehirAdi&Sequence_5",
+        "HavaYagis&Sequence_5",
+        "HavaRuzgar&Sequence_5",
+        "HavaNem&Sequence_5",
+        "HavaSehir&Sequence_5",
+        "GunSaat&Sequence_5",
+        "BulutDurumu&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
